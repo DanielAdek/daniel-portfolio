@@ -55,5 +55,4 @@ npm run dev
 
 ## Notes
 
--   Always run `npm install` after pulling new changes
--   Feel free to use it as your own portfolio
+-   If you choose to use my portfolio as your's, you must edit the projects page. Do not use my projects as your achievements
