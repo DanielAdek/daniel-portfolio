@@ -1,12 +1,4 @@
-# Next.js, React & TailwindCSS Portfolio Project
-
-A simple portfolio starter theme built with Next.js, React and Tailwind CSS. This is the Next.js version of [vuejs-tailwindcss-portfolio](https://github.com/realstoman/vuejs-tailwindcss-portfolio).
-
-![React-TailwindCSS-Portfolio](https://user-images.githubusercontent.com/16396664/146666086-28e88beb-c2f0-431f-adfb-2396d8f64c80.png)
-
-## Demo URL
-
-[https://nextjs-tailwindcss-portfolio.vercel.app](https://nextjs-tailwindcss-portfolio.vercel.app)
+# Daniel's Portfolio Project
 
 ## Other versions of this project
 
@@ -30,8 +22,6 @@ A simple portfolio starter theme built with Next.js, React and Tailwind CSS. Thi
 -   Back to top button
 -   Download file button
 -   Simple and responsive design
-
-### To Contribute to this project, read the [Contribution Guidlines](https://github.com/realstoman/nextjs-tailwindcss-portfolio/blob/main/CONTRIBUTING.md)
 
 ## Setup
 
@@ -78,7 +68,3 @@ npm run dev
 -   Images from [Unsplash](https://unsplash.com)
 -   Feel free to use it as your own portfolio
 -   Contributions are welcome
-
-### License
-
-[MIT](https://github.com/realstoman/nextjs-tailwindcss-portfolio/blob/main/LICENSE)
