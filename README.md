@@ -38,7 +38,7 @@ git clone https://github.com/realstoman/nextjs-tailwindcss-portfolio.git
 3. Open the project folder:
 
 ```
-cd nextjs-tailwindcss-portfolio
+cd daniel-portfolio
 ```
 
 4. Install packages and dependencies:
