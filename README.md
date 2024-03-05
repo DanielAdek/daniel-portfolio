@@ -1,11 +1,5 @@
 # Daniel's Portfolio Project
 
-## Other versions of this project
-
--   React Version: [https://github.com/realstoman/react-tailwindcss-portfolio](https://github.com/realstoman/react-tailwindcss-portfolio)
--   Vue.js Version: [https://github.com/realstoman/vuejs-tailwindcss-portfolio](https://github.com/realstoman/vuejs-tailwindcss-portfolio)
--   Nuxt.js Version: [https://github.com/realstoman/nuxtjs-tailwindcss-portfolio](https://github.com/realstoman/nuxtjs-tailwindcss-portfolio)
-
 ## Features
 
 -   Built with [Next.js](https://nextjs.org) and [React](https://reactjs.org)
