@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import React, {Dispatch, SetStateAction, useState} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FiSun, FiMoon, FiX, FiMenu } from 'react-icons/fi';
 import HireMeModal from '../HireMeModal';
-import logoLight from '../../public/images/logo-light.svg';
-import logoDark from '../../public/images/logo-dark.svg';
+import logoLight from '../../../public/images/logo-light.svg';
+import logoDark from '../../../public/images/logo-dark.svg';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 
 function AppHeader() {
@@ -34,6 +34,8 @@ function AppHeader() {
 			setShowModal(false);
 		}
 	}
+
+	const handleSetTheme = (): React.Dispatch<React.SetStateAction<string>> => setTheme as Dispatch<SetStateAction<string>>;
 
 	return (
 		<motion.nav
@@ -70,7 +72,7 @@ function AppHeader() {
 
 					{/* Theme switcher small screen */}
 					<div
-						onClick={() => setTheme(activeTheme)}
+						onClick={handleSetTheme}
 						aria-label="Theme Switcher"
 						className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
 					>
@@ -113,7 +115,7 @@ function AppHeader() {
 					}
 				>
 					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2">
-						<Link href="/projects" aria-label="Projects">
+						<Link href="/index" aria-label="Projects">
 							Projects
 						</Link>
 					</div>
@@ -144,7 +146,7 @@ function AppHeader() {
 						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Projects"
 					>
-						<Link href="/projects">Projects</Link>
+						<Link href="/index">Projects</Link>
 					</div>
 					<div
 						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
@@ -175,7 +177,7 @@ function AppHeader() {
 
 					{/* Theme switcher large screen */}
 					<div
-						onClick={() => setTheme(activeTheme)}
+						onClick={handleSetTheme}
 						aria-label="Theme Switcher"
 						className="ml-8 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
 					>
@@ -194,7 +196,7 @@ function AppHeader() {
 						onRequest={showHireMeModal}
 					/>
 				) : null}
-				{showModal ? showHireMeModal : null}
+				{!showModal ? null : "showHireMeModal"}
 			</div>
 		</motion.nav>
 	);

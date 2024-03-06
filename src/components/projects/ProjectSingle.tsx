@@ -1,14 +1,15 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import {ProjectData} from "@/data/projectsData";
 
 const imageStyle = { maxWidth: '100%', height: 'auto' };
 
-const ProjectSingle = (props) => {
+const ProjectSingle = (props: ProjectData) => {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
-			animate={{ opacity: 1, delay: 1 }}
+			animate={{ opacity: 1 }}
 			transition={{
 				ease: 'easeInOut',
 				duration: 0.7,

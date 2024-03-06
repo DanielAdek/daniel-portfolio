@@ -1,6 +1,7 @@
-import Image from 'next/image';
+import Image, {StaticImageData} from 'next/image';
 
-function AboutClientSingle({ title, image }) {
+function AboutClientSingle(props: { title: string, image: StaticImageData }) {
+	const { title, image } = props;
 	return (
 		<div className="py-5 px-10 border bg-secondary-light border-ternary-light dark:border-ternary-dark  shadow-sm rounded-lg mb-5 cursor-pointer">
 			<Image

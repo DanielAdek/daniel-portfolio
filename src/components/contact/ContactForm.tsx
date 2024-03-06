@@ -54,8 +54,8 @@ function ContactForm() {
 							className="w-full px-5 py-2 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md"
 							id="message"
 							name="message"
-							cols="14"
-							rows="6"
+							cols={14}
+							rows={6}
 							aria-label="Message"
 						></textarea>
 					</div>
@@ -64,7 +64,6 @@ function ContactForm() {
 						<span className="font-general-medium  px-7 py-4 text-white text-center font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg mt-6 duration-500">
 							<Button
 								title="Send Message"
-								type="submit"
 								aria-label="Send Message"
 							/>
 						</span>

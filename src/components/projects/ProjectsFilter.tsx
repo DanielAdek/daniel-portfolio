@@ -1,11 +1,13 @@
+import React from "react";
+
 const selectOptions = [
 	'Web Application',
 	'Mobile Application',
 	'Servers only',
 ];
 
-function ProjectsFilter({ setSelectProject }) {
-	const handleChange = (event) => setSelectProject(event.target.value);
+function ProjectsFilter({ setSelectProject }: { setSelectProject: React.SetStateAction<any>}) {
+	const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => setSelectProject(event.target.value);
 
 	return (
 		<select

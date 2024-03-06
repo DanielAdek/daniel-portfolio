@@ -765,3 +765,8 @@ export const projectsData = [
 		},
 	},
 ];
+
+
+export type ProjectsData = typeof projectsData;
+
+export type ProjectData = typeof projectsData[0];

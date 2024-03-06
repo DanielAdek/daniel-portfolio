@@ -6,7 +6,7 @@ const FormInput = ({
 	inputName,
 	placeholderText,
 	ariaLabelName,
-}) => {
+}: any) => {
 	return (
 		<div className="font-general-regular mb-4">
 			<label
