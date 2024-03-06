@@ -35,8 +35,6 @@ function AppHeader() {
 		}
 	}
 
-	const handleSetTheme = (): React.Dispatch<React.SetStateAction<string>> => setTheme as Dispatch<SetStateAction<string>>;
-
 	return (
 		<motion.nav
 			initial={{ opacity: 0 }}
@@ -72,7 +70,7 @@ function AppHeader() {
 
 					{/* Theme switcher small screen */}
 					<div
-						onClick={handleSetTheme}
+						onClick={() => setTheme(activeTheme)}
 						aria-label="Theme Switcher"
 						className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
 					>
@@ -177,7 +175,7 @@ function AppHeader() {
 
 					{/* Theme switcher large screen */}
 					<div
-						onClick={handleSetTheme}
+						onClick={() => setTheme(activeTheme)}
 						aria-label="Theme Switcher"
 						className="ml-8 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
 					>
@@ -196,7 +194,7 @@ function AppHeader() {
 						onRequest={showHireMeModal}
 					/>
 				) : null}
-				{!showModal ? null : "showHireMeModal"}
+				{showModal ? "showHireMeModal" : null}
 			</div>
 		</motion.nav>
 	);

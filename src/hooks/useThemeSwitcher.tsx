@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+import {Dispatch, SetStateAction, useEffect, useState} from 'react';
 
-function useThemeSwitcher() {
+function useThemeSwitcher(): [string, Dispatch<SetStateAction<string>>] {
 	const [theme, setTheme] = useState<string>(
 		typeof window !== 'undefined' ? localStorage.theme : ''
 	);
@@ -8,7 +8,6 @@ function useThemeSwitcher() {
 
 	useEffect(() => {
 		const root = window.document.documentElement;
-
 		root.classList.remove(activeTheme);
 		root.classList.add(theme);
 		localStorage.setItem('theme', theme);
