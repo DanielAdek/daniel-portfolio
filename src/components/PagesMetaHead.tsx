@@ -19,7 +19,6 @@ function PagesMetaHead(props: any) {
 
 PagesMetaHead.defaultProps = {
 	title: 'Daniel\'s Portfolio Project',
-	// keywords: 'next.js, react, web, ui',
 	keywords: 'Simple and multi-page next.js and react application',
 };
 

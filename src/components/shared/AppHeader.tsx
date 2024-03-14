@@ -1,4 +1,4 @@
-import React, {Dispatch, SetStateAction, useState} from 'react';
+import React, {useState} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -51,18 +51,18 @@ function AppHeader() {
 							{activeTheme === 'dark' ? (
 								<Image
 									src={logoDark}
-									className="w-36 cursor-pointer"
+									className="cursor-pointer"
 									alt="Dark Logo"
-									width={150}
-									height={120}
+									width={100}
+									height={100}
 								/>
 							) : (
 								<Image
 									src={logoLight}
-									className="w-36 cursor-pointer"
-									alt="Dark Logo"
-									width={150}
-									height={120}
+									className="cursor-pointer"
+									alt="Light Logo"
+									width={100}
+									height={100}
 								/>
 							)}
 						</Link>
@@ -113,7 +113,7 @@ function AppHeader() {
 					}
 				>
 					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2">
-						<Link href="/index" aria-label="Projects">
+						<Link href="/projects" aria-label="Projects">
 							Projects
 						</Link>
 					</div>
@@ -144,7 +144,7 @@ function AppHeader() {
 						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Projects"
 					>
-						<Link href="/index">Projects</Link>
+						<Link href="/projects">Projects</Link>
 					</div>
 					<div
 						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"

@@ -10,39 +10,39 @@ import {
 export const projectsData = [
 	{
 		id: 1,
-		title: 'Google Health Platform',
-		url: 'google-health-platform',
-		category: 'Web Application',
-		img: '/images/web-project-2.jpg',
+		title: 'WayaGram',
+		url: 'https://app.staging.wayagram.ng',
+		category: 'Social Media',
+		img: '/images/wayagram-handle.png',
 		ProjectHeader: {
-			title: 'Google Health Platform',
+			title: 'Waya Multilink Social Media',
 			publishDate: 'Jul 26, 2021',
-			tags: 'UI / Frontend',
+			tags: 'API / Backend / Frontend',
 		},
 		ProjectImages: [
 			{
 				id: uuidv4(),
-				title: 'Google Health Platform',
-				img: '/images/ui-project-1.jpg',
+				title: 'Profile Handle Page',
+				img: '/images/wayagram-handle.PNG',
 			},
 			{
 				id: uuidv4(),
-				title: 'Google Health Platform',
-				img: '/images/web-project-2.jpg',
+				title: 'Main Page',
+				img: '/images/wayagram.PNG',
 			},
 			{
 				id: uuidv4(),
-				title: 'Google Health Platform',
-				img: '/images/mobile-project-2.jpg',
+				title: 'Authentication Page',
+				img: '/images/wayagram-login.PNG',
 			},
 		],
 		ProjectInfo: {
-			ClientHeading: 'About Client',
+			ClientHeading: 'About Company',
 			CompanyInfo: [
 				{
 					id: uuidv4(),
-					title: 'Name',
-					details: 'Company Ltd',
+					title: 'WAYA MULTILINK',
+					details: 'COMPANY Ltd',
 				},
 				{
 					id: uuidv4(),
@@ -52,27 +52,25 @@ export const projectsData = [
 				{
 					id: uuidv4(),
 					title: 'Website',
-					details: 'https://company.com',
+					details: 'https://staging.wayagram.ng',
 				},
 				{
 					id: uuidv4(),
 					title: 'Phone',
-					details: '555 8888 888',
+					details: '+234',
 				},
 			],
 			ObjectivesHeading: 'Objective',
 			ObjectivesDetails:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
+				'To create a social platform for users to connect with other users, and socialize, share remarkable moments, join channels and groups, pages, and follow others.',
 			Technologies: [
 				{
 					title: 'Tools & Technologies',
 					techs: [
-						'HTML',
-						'CSS',
-						'JavaScript',
-						'Vue.js',
-						'TailwindCSS',
-						'AdobeXD',
+						'NodeJS',
+						'PostgreSQL',
+						'ExpressJS',
+						'Passport & JWT',
 					],
 				},
 			],
@@ -105,19 +103,19 @@ export const projectsData = [
 			// 		id: uuidv4(),
 			// 		name: 'Twitter',
 			// 		icon: <FiTwitter />,
-			// 		url: 'https://twitter.com/realstoman',
+			// 		url: 'https://twitter.com/daniel-adek',
 			// 	},
 			// 	{
 			// 		id: uuidv4(),
 			// 		name: 'Instagram',
 			// 		icon: <FiInstagram />,
-			// 		url: 'https://instagram.com/realstoman',
+			// 		url: 'https://instagram.com/daniel-adek',
 			// 	},
 			// 	{
 			// 		id: uuidv4(),
 			// 		name: 'Facebook',
 			// 		icon: <FiFacebook />,
-			// 		url: 'https://facebook.com/',
+			// 		url: 'https://facebook.com/danieladek',
 			// 	},
 			// 	{
 			// 		id: uuidv4(),
@@ -129,7 +127,131 @@ export const projectsData = [
 			// 		id: uuidv4(),
 			// 		name: 'Youtube',
 			// 		icon: <FiYoutube />,
-			// 		url: 'https://www.youtube.com/c/StomanStudio',
+			// 		url: 'https://www.youtube.com/c/Danieladek',
+			// 	},
+			// ],
+		},
+	},
+	{
+		id: 2,
+		title: 'Wayabank',
+		url: 'https://staging.wayabank.ng',
+		category: 'Fintech',
+		img: '/images/wayabank.PNG',
+		ProjectHeader: {
+			title: 'Waya Multilink Digital Banking',
+			publishDate: 'Jul 26, 2021',
+			tags: 'API / Backend / USSD',
+		},
+		ProjectImages: [
+			{
+				id: uuidv4(),
+				title: 'Waya Multilink Digital Banking',
+				img: '/images/wayabank.PNG',
+			},
+			{
+				id: uuidv4(),
+				title: 'Waya Multilink Digital Banking',
+				img: '/images/wayabank-api.PNG',
+			},
+			{
+				id: uuidv4(),
+				title: 'Waya Multilink Digital Banking',
+				img: '/images/wayabank-project.PNG',
+			},
+		],
+		ProjectInfo: {
+			ClientHeading: 'About Company',
+			CompanyInfo: [
+				{
+					id: uuidv4(),
+					title: 'WAYA MULTILINK',
+					details: 'COMPANY Ltd',
+				},
+				{
+					id: uuidv4(),
+					title: 'Services',
+					details: 'Web Development',
+				},
+				{
+					id: uuidv4(),
+					title: 'Website',
+					details: 'https://staging.wayabank.ng',
+				},
+				{
+					id: uuidv4(),
+					title: 'Phone',
+					details: '+234',
+				},
+			],
+			ObjectivesHeading: 'Objective',
+			ObjectivesDetails:
+				'To create a simplified digital banking system that allows users to send and receive money, pay bills and top up mobile airtime',
+			Technologies: [
+				{
+					title: 'Tools & Technologies',
+					techs: [
+						'Spring Boot 3',
+						'Spring Security',
+						'NodeJS (USSD)',
+						'PostgreSQL',
+					],
+				},
+			],
+			ProjectDetailsHeading: 'Challenge',
+			ProjectDetails: [
+				{
+					id: uuidv4(),
+					details:
+						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+				},
+				{
+					id: uuidv4(),
+					details:
+						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+				},
+				{
+					id: uuidv4(),
+					details:
+						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+				},
+				{
+					id: uuidv4(),
+					details:
+						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+				},
+			],
+			SocialSharingHeading: 'Share This',
+			// SocialSharing: [
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'Twitter',
+			// 		icon: <FiTwitter />,
+			// 		url: 'https://twitter.com/daniel-adek',
+			// 	},
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'Instagram',
+			// 		icon: <FiInstagram />,
+			// 		url: 'https://instagram.com/daniel-adek',
+			// 	},
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'Facebook',
+			// 		icon: <FiFacebook />,
+			// 		url: 'https://facebook.com/danieladek',
+			// 	},
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'LinkedIn',
+			// 		icon: <FiLinkedin />,
+			// 		url: 'https://linkedin.com/',
+			// 	},
+			// 	{
+			// 		id: uuidv4(),
+			// 		name: 'Youtube',
+			// 		icon: <FiYoutube />,
+			// 		url: 'https://www.youtube.com/c/Danieladek',
 			// 	},
 			// ],
 		},
@@ -231,31 +353,31 @@ export const projectsData = [
 			// 		id: uuidv4(),
 			// 		name: 'Twitter',
 			// 		icon: <FiTwitter />,
-			// 		url: 'https://twitter.com/realstoman',
+			// 		url: 'https://twitter.com/daniel-adek',
 			// 	},
 			// 	{
 			// 		id: uuidv4(),
 			// 		name: 'Instagram',
 			// 		icon: <FiInstagram />,
-			// 		url: 'https://instagram.com/realstoman',
+			// 		url: 'https://instagram.com/daniel-adek',
 			// 	},
 			// 	{
 			// 		id: uuidv4(),
 			// 		name: 'Facebook',
 			// 		icon: <FiFacebook />,
-			// 		url: 'https://facebook.com/',
+			// 		url: 'https://facebook.com/DanielAdek',
 			// 	},
 			// 	{
 			// 		id: uuidv4(),
 			// 		name: 'LinkedIn',
 			// 		icon: <FiLinkedin />,
-			// 		url: 'https://linkedin.com/',
+			// 		url: 'https://linkedin.com/in/daniel-adek',
 			// 	},
 			// 	{
 			// 		id: uuidv4(),
 			// 		name: 'Youtube',
 			// 		icon: <FiYoutube />,
-			// 		url: 'https://www.youtube.com/c/StomanStudio',
+			// 		url: 'https://www.youtube.com/c/DanielAdek',
 			// 	},
 			// ],
 		},
@@ -357,7 +479,7 @@ export const projectsData = [
 			// 		id: uuidv4(),
 			// 		name: 'Twitter',
 			// 		icon: <FiTwitter />,
-			// 		url: 'https://twitter.com/realstoman',
+			// 		url: 'https://twitter.com/daniel-adek',
 			// 	},
 			// 	{
 			// 		id: uuidv4(),

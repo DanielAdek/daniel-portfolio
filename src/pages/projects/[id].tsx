@@ -4,27 +4,27 @@ import PagesMetaHead from '../../components/PagesMetaHead';
 import {ProjectData, projectsData} from '../../data/projectsData';
 import RelatedProjects from '../../components/projects/RelatedProjects';
 
-function ProjectSingle(props: ProjectData) {
+function ProjectSingle(props: {project: ProjectData}) {
 	return (
 		<div className="container mx-auto">
-			<PagesMetaHead title={props.title} />
+			<PagesMetaHead title={props.project.title} />
 
 			{/* Header */}
 			<div>
 				<p className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-20 mb-7">
-					{props.ProjectHeader.title}
+					{props.project.ProjectHeader.title}
 				</p>
 				<div className="flex">
 					<div className="flex items-center mr-10">
 						<FiClock className="text-xl text-ternary-dark dark:text-ternary-light" />
 						<span className="font-general-regular ml-2 leading-none text-primary-dark dark:text-primary-light">
-							{props.ProjectHeader.publishDate}
+							{props.project.ProjectHeader.publishDate}
 						</span>
 					</div>
 					<div className="flex items-center">
 						<FiTag className="w-4 h-4 text-ternary-dark dark:text-ternary-light" />
 						<span className="font-general-regular ml-2 leading-none text-primary-dark dark:text-primary-light">
-							{props.ProjectHeader.tags}
+							{props.project.ProjectHeader.tags}
 						</span>
 					</div>
 				</div>
@@ -32,7 +32,7 @@ function ProjectSingle(props: ProjectData) {
 
 			{/* Gallery */}
 			<div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
-				{props.ProjectImages.map((project) => {
+				{props.project.ProjectImages.map((project) => {
 					return (
 						<div className="mb-10 sm:mb-0" key={project.id}>
 							<Image
@@ -55,10 +55,10 @@ function ProjectSingle(props: ProjectData) {
 					{/* Single project client details */}
 					<div className="mb-7">
 						<p className="font-general-regular text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
-							{props.ProjectInfo.ClientHeading}
+							{props.project.ProjectInfo.ClientHeading}
 						</p>
 						<ul className="leading-loose">
-							{props.ProjectInfo.CompanyInfo.map(
+							{props.project.ProjectInfo.CompanyInfo.map(
 								(info) => {
 									return (
 										<li
@@ -67,7 +67,7 @@ function ProjectSingle(props: ProjectData) {
 										>
 											<span>{info.title}: </span>
 											<a
-												href="https://stoman.me"
+												href="https://daniel-portfolio.vercel.app"
 												className={
 													info.title === 'Website' ||
 													info.title === 'Phone'
@@ -88,20 +88,20 @@ function ProjectSingle(props: ProjectData) {
 					{/* Single project objectives */}
 					<div className="mb-7">
 						<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
-							{props.ProjectInfo.ObjectivesHeading}
+							{props.project.ProjectInfo.ObjectivesHeading}
 						</p>
 						<p className="font-general-regular text-primary-dark dark:text-ternary-light">
-							{props.ProjectInfo.ObjectivesDetails}
+							{props.project.ProjectInfo.ObjectivesDetails}
 						</p>
 					</div>
 
 					{/* Single project technologies */}
 					<div className="mb-7">
 						<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
-							{props.ProjectInfo.Technologies[0].title}
+							{props.project.ProjectInfo.Technologies[0].title}
 						</p>
 						<p className="font-general-regular text-primary-dark dark:text-ternary-light">
-							{props.ProjectInfo.Technologies[0].techs.join(
+							{props.project.ProjectInfo.Technologies[0].techs.join(
 								', '
 							)}
 						</p>
@@ -110,10 +110,10 @@ function ProjectSingle(props: ProjectData) {
 					{/* Single project social sharing */}
 					<div>
 						<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
-							{props.ProjectInfo.SocialSharingHeading}
+							{props.project.ProjectInfo.SocialSharingHeading}
 						</p>
 						{/* <div className="flex items-center gap-3 mt-5">
-							{props.ProjectInfo.SocialSharing.map(
+							{props.project.ProjectInfo.SocialSharing.map(
 								(social, index) => {
 									<Link
 										key={index}
@@ -136,9 +136,9 @@ function ProjectSingle(props: ProjectData) {
 				{/*  Single project right section details */}
 				<div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
 					<p className="text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
-						{props.ProjectInfo.ProjectDetailsHeading}
+						{props.project.ProjectInfo.ProjectDetailsHeading}
 					</p>
-					{props.ProjectInfo.ProjectDetails.map((details) => {
+					{props.project.ProjectInfo.ProjectDetails.map((details) => {
 						return (
 							<p
 								key={details.id}

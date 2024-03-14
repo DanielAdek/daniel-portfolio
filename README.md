@@ -1,4 +1,6 @@
-# Daniel's Portfolio Project
+# Fakelos
+
+Fakelos is a greek word meaning folder or portfolio. This project is Daniel's portfolio built with Nextjs on the frontend and `NestJs` on the backend
 
 ## Features
 
