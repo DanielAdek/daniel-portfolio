@@ -30,7 +30,7 @@ const ProjectSingle = (props: ProjectData) => {
 							alt="Single Project"
 							layout="responsive"
 							width={100}
-							height={90}
+							height={60}
 						/>
 					</div>
 					<div className="text-center px-4 py-6">

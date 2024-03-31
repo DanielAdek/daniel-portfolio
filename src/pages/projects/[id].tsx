@@ -15,12 +15,12 @@ function ProjectSingle(props: {project: ProjectData}) {
 					{props.project.ProjectHeader.title}
 				</p>
 				<div className="flex">
-					<div className="flex items-center mr-10">
+					{/*<div className="flex items-center mr-10">
 						<FiClock className="text-xl text-ternary-dark dark:text-ternary-light" />
 						<span className="font-general-regular ml-2 leading-none text-primary-dark dark:text-primary-light">
 							{props.project.ProjectHeader.publishDate}
 						</span>
-					</div>
+					</div> */}
 					<div className="flex items-center">
 						<FiTag className="w-4 h-4 text-ternary-dark dark:text-ternary-light" />
 						<span className="font-general-regular ml-2 leading-none text-primary-dark dark:text-primary-light">
@@ -67,10 +67,10 @@ function ProjectSingle(props: {project: ProjectData}) {
 										>
 											<span>{info.title}: </span>
 											<a
-												href="https://daniel-portfolio.vercel.app"
+												href={info.link}
+												target={"_blank"}
 												className={
-													info.title === 'Website' ||
-													info.title === 'Phone'
+													info.title === 'Website'
 														? 'hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300'
 														: ''
 												}
@@ -101,9 +101,11 @@ function ProjectSingle(props: {project: ProjectData}) {
 							{props.project.ProjectInfo.Technologies[0].title}
 						</p>
 						<p className="font-general-regular text-primary-dark dark:text-ternary-light">
-							{props.project.ProjectInfo.Technologies[0].techs.join(
-								', '
-							)}
+							<ul>
+								{props.project.ProjectInfo.Technologies[0].techs.map((skill, i) => (
+									<li key={i}>{skill}</li>
+								))}
+							</ul>
 						</p>
 					</div>
 
@@ -144,14 +146,19 @@ function ProjectSingle(props: {project: ProjectData}) {
 								key={details.id}
 								className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
 							>
-								{details.details}
+								<strong>{details.point + ' '}</strong>
+								<ul style={{listStyle: 'inside', paddingLeft: '20px'}}>
+									{details.details.map((task, i) => (
+										<li key={i}>{task}</li>
+									))}
+								</ul>
 							</p>
 						);
 					})}
 				</div>
 			</div>
 
-			<RelatedProjects />
+			{/*<RelatedProjects />*/}
 		</div>
 	);
 }

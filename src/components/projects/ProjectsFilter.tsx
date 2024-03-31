@@ -1,9 +1,11 @@
 import React from "react";
 
 const selectOptions = [
-	'Web Application',
-	'Mobile Application',
-	'Servers only',
+	'Fintech',
+	"Telematics",
+	'Social Media',
+	'Booking',
+	"Mobile"
 ];
 
 function ProjectsFilter({ setSelectProject }: { setSelectProject: React.SetStateAction<any>}) {

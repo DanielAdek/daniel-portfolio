@@ -21,8 +21,8 @@ function ProjectsGrid() {
 	// });
 
 	const selectProjectsByCategory = projectsData.filter((item) => {
-		let category = item.category.charAt(0).toUpperCase() + item.category.slice(1);
-		return category.includes(selectProject as unknown as string);
+		let type = item.type.charAt(0).toUpperCase() + item.type.slice(1);
+		return type.includes(selectProject as unknown as string);
 	});
 
 	const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => setSearchProject(event.target.value as unknown as undefined);
